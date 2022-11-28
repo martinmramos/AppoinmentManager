@@ -1,0 +1,2 @@
+ALTER TABLE appointments
+ADD CONSTRAINT FK_PATIENT_DNI FOREIGN KEY (patient_dni) REFERENCES patients(dni);
