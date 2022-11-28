@@ -30,7 +30,6 @@ public class AppointmentController {
         try {
             appointmentService.addAppointment(appointmentInputDto);
         } catch (Exception e) {
-            e.printStackTrace();
             return ResponseEntity.badRequest().build();
         }
         return ResponseEntity.status(HttpStatus.ACCEPTED).build();
